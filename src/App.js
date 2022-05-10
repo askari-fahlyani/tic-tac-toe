@@ -38,6 +38,12 @@ function TicTacToe() {
     setBoard(board.map((val,idx)=>{
       if (square==idx && val==''){
         return player
+      }else if(square==idx && val !=''){
+        if (val=='X'){
+          setPlayer('X')
+        }else {
+          setPlayer(val='O')
+        }
       }
       return val
     }))
