@@ -1,0 +1,38 @@
+.ticTacToe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.board{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    flex: 33%;
+
+    display: flex;
+
+}
+.cell{
+    flex: 33%;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+
+}
+.cell:active{
+    background-color: #64f4c4;
+}
